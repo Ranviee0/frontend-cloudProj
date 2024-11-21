@@ -10,11 +10,6 @@ interface Config {
   email: string | null;
 }
 
-interface StreamingURLUpdate{
-  streaming_URL: string;
-}
-
-
 const Configs: React.FC = () => {
   const [configs, setConfigs] = useState<Config[]>([]);
   const [editingRow, setEditingRow] = useState<string | null>(null); // Tracks the row being edited
